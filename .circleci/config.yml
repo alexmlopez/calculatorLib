@@ -21,5 +21,5 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            flake --exclude=env* --ignore=E303,W292,W293 --statistics
+            flake8 --exclude=env* --ignore=E303,W292,W293 --statistics
             pytest -v --cov=calculatorLib
